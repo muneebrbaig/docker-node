@@ -1,0 +1,12 @@
+version: '2.1'
+
+services:
+  docker-node:
+    image: docker-node
+    build: .
+    environment:
+      NODE_ENV: development
+    ports:
+      - 201903:201903
+      - 9229:9229
+    command: node --inspect=0.0.0.0:9229 app

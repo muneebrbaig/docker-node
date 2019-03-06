@@ -1,0 +1,10 @@
+version: '2.1'
+
+services:
+  docker-node:
+    image: docker-node
+    build: .
+    environment:
+      NODE_ENV: production
+    ports:
+      - 201903:201903
